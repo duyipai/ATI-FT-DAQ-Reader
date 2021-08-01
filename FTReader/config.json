@@ -1,0 +1,5 @@
+{
+  "sensor": "FT_ATI",
+  "calFilePath": "FT27374.cal",
+  "frequency" :  60
+}
