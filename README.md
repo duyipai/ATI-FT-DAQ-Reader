@@ -4,12 +4,12 @@ This is a simple C++ implementation of reading data from an ATI DAQ Force Sensor
 ## Requirements
 - NI-DAQmx drivers (https://www.ni.com/de-de/support/downloads/drivers/download.ni-daqmx.html#333268)
 - ATIDAQ C Library (https://www.ati-ia.com/Products/ft/software/daq_software.aspx)
-- Visual Studio (tested with Visual Studio 2017 32bit compiler)
+- Visual Studio (tested with Visual Studio 2017 x86 compiler)
 
-### Usage -
+### Usage
 From the cmake GUI: 
 
-- Run configure (Select x86 platform for the project generator)
+- Run configure (Select Win32 platform for the project generator)
 - Add the path to the ATIDAQ C Library in **DAQmx_DIR** (This directory must contain both the .h and NIDAQmx.lib and aticonvert.lib files)
 - Eventually change the **CMAKE_INSTALL_PREFIX** to the directory where you want your .exe file to be installed
 - Run configure again
