@@ -76,6 +76,13 @@ int main()
 		sensor->getData(data);
 		// Do anything you want with data here
 		std::cout << data[0] << data[1] << data[2] << data[3] << data[4] << data[5] << std::endl;
+		std::ofstream writer("measurement.txt", std::ofstream::trunc);
+		if (!writer)
+		{
+			std::cout << "Error opening export file" << std::endl;
+		}
+		writer << data[0] << " " << data[1] << " " << data[2] << " " << data[3] << " " << data[4] << " " << data[5];
+		writer.close();
 		Sleep(1000 / (config.freq));
 	}
 	return 0;
